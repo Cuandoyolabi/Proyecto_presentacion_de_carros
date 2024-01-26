@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan:  hsl(179, 100%, 13%);
+    --Transparent_white: hsla(0, 0%, 100%, 0.75);
+    --Very_light_gray: hsl(0, 0%, 95%);
+
+}
+
+h1{
+    color: rgb(251, 251, 251);
+}
+p{
+    color: rgb(251, 251, 251);
+}
+
+.main-container{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 330px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+/* -----------------Tarjetas-------------*/
+
+.container__card{
+    width: 330px;
+    height: 440px;
+}
+
+.container__sedans{
+    background-color: var(--Bright_orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; 
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.container__card__sedans{
+    width: 70%;
+    height: 80%;
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.container__suvs{
+    background-color: var(--Dark_cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; 
+}
+
+.container__card__suvs{
+    width: 70%;
+    height: 80%;
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:space-between;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+}
+
+.container__luxury{
+    background-color: var(--Very_dark_cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;     
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.container__card__luxury{
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:space-between;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+}
+
+ /*------------Complementos---------------*/
+
+.img{
+    width: 80px;
+    height: 50px;
+    font-size: 50px;
+}
+
+.btn{
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+}
+
+.btn__sedans{
+    color:  hsl(31, 77%, 52%);
+    font-weight: 400;
+}
+
+.btn__suvs{
+    color: hsl(184, 100%, 22%);
+    font-weight: 400;
+}
+
+.btn__luxury{
+    color:hsl(180, 48%, 26%);
+    font-weight: 400;
+}
+
+/*-----------(800px)------------*/
+
+@media screen and (min-width: 800px){
+    .main-container{
+        flex-direction: row;
+    }
+    .container{
+        width: 830px;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+    }
+    .container__card{
+        width: 270px;
+        height: 450px;
+    }
+    .container__luxury{
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+    .container__sedans{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
